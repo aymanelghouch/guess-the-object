@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ## Ejecución
 
 ```bash
-uvicorn app.main:app --reload
+python -m uvicorn app.main:app --reload
 ```
 
 Abre http://127.0.0.1:8000. La documentación interactiva está en `/docs`.
