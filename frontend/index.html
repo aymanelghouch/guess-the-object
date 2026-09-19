@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessTheObject AI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>GuessTheObject AI</h1>
+      <p class="subtitle">
+        Sube una imagen y la IA intentará adivinar qué objeto es.
+      </p>
+
+      <label class="upload" for="file-input">
+        <input type="file" id="file-input" accept="image/*" hidden />
+        <img id="preview" alt="Vista previa" hidden />
+        <span id="upload-text">Haz clic para elegir una imagen</span>
+      </label>
+
+      <button id="predict-btn" disabled>Identificar objeto</button>
+
+      <p id="error" class="error" hidden></p>
+
+      <section id="results" hidden>
+        <div class="top">
+          <span id="top-label" class="top-label"></span>
+          <span id="top-conf" class="top-conf"></span>
+        </div>
+        <h2>Otras predicciones</h2>
+        <ul id="others"></ul>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
