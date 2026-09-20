@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+transformers
+pillow
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pytest
+httpx
